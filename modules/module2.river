@@ -1,0 +1,8 @@
+declare "sub" {
+  argument "a" {}
+  argument "b" {}
+
+  export "sum" {
+    value = argument.a.value - argument.b.value
+  }
+}

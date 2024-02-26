@@ -2,7 +2,12 @@ declare "add" {
   argument "a" {}
   argument "b" {}
 
+  sub "cc" {
+    a = argument.a.value
+    b = argument.b.value
+  }
+
   export "sum" {
-    value = argument.a.value + argument.b.value
+    value = argument.a.value + argument.b.value - sub.cc.sum
   }
 }
