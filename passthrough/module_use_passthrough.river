@@ -1,0 +1,11 @@
+declare "a" {
+	argument "input" {}
+
+	b "cc" {
+		input = argument.input.value
+	}
+
+	export "output" {
+		value = b.cc.output
+	}
+}
