@@ -3,6 +3,6 @@ declare "add" {
     argument "b" {}
 
     export "sum" {
-        value = argument.a.value + argument.b.value - 4
+        value = argument.a.value
     }
 }
