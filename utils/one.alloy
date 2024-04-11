@@ -1,0 +1,5 @@
+declare "one" {
+    export "output" {
+        value = 1
+    }
+}

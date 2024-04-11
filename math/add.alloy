@@ -1,13 +1,12 @@
 declare "add" {
-    argument "value1" {
-
-    }
-
-    argument "value2" {
-
-    }
-
+    argument "value1" {}
+    argument "value2" {}
+    utils.one "default" {}
     export "output" {
-        value = argument.value1.value + argument.value2.value
+        value = argument.value1.value + argument.value2.value + utils.one.default.output
     }
+}
+
+import.file "utils" {
+    filename = "../utils"
 }
