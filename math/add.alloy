@@ -8,5 +8,5 @@ declare "add" {
 }
 
 import.file "utils" {
-    filename = "../utils"
+    filename = "data-alloy/import.git.math/repo/utils"
 }

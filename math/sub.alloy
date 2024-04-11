@@ -1,11 +1,6 @@
 declare "sub" {
-    argument "value1" {
-
-    }
-
-    argument "value2" {
-
-    }
+    argument "value1" {}
+    argument "value2" {}
     export "output" {
         value = argument.value1.value - argument.value2.value
     }
