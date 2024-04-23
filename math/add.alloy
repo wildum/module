@@ -1,7 +1,7 @@
 declare "add" {
     argument "value1" {}
     argument "value2" {}
-    utils.one "default" {}
+    blablabla.one "default" {}
     export "output" {
         value = argument.value1.value + argument.value2.value + blablabla.one.default.output
     }
