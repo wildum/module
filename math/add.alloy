@@ -3,10 +3,12 @@ declare "add" {
     argument "value2" {}
     utils.one "default" {}
     export "output" {
-        value = argument.value1.value + argument.value2.value + utils.one.default.output
+        value = argument.value1.value + argument.value2.value + blablabla.one.default.output
     }
 }
 
-import.file "utils" {
-    filename = "data-alloy/import.git.math/repo/utils"
+import.git "blablabla" {
+    repository = "https://github.com/wildum/module.git"
+    revision   = "test-modules"
+    path       = "utils"
 }
