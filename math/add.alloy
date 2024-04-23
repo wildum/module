@@ -1,13 +1,13 @@
 declare "add" {
     argument "value1" {}
     argument "value2" {}
-    blablabla.one "default" {}
+    aaaaa.one "default" {}
     export "output" {
-        value = argument.value1.value + argument.value2.value + blablabla.one.default.output
+        value = argument.value1.value + argument.value2.value + aaaaa.one.default.output
     }
 }
 
-import.git "blablabla" {
+import.git "aaaaa" {
     repository = "https://github.com/wildum/module.git"
     revision   = "test-modules"
     path       = "utils"
