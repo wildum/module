@@ -10,6 +10,6 @@ declare "a" {
 	}
 
 	export "output" {
-		value = b.cc.output
+		value = testImport.b.cc.output
 	}
 }
