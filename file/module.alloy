@@ -5,7 +5,7 @@ import.file "testImport" {
 declare "a" {
 	argument "input" {}
 
-	b "cc" {
+	testImport.b "cc" {
 		input = argument.input.value
 	}
 
