@@ -1,0 +1,15 @@
+import.file "testImport" {
+    filename = path_join(module_path, "../utils")
+}
+
+declare "a" {
+	argument "input" {}
+
+	b "cc" {
+		input = argument.input.value
+	}
+
+	export "output" {
+		value = b.cc.output
+	}
+}
