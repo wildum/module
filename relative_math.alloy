@@ -1,5 +1,5 @@
 import.file "lib" {
-  filename = file.path_join(module_path, lib.alloy)
+  filename = file.path_join(module_path, "lib.alloy")
 }
 
 declare "add" {
