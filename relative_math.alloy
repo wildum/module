@@ -1,0 +1,17 @@
+import.file "lib" {
+  filename = file.path_join(module_path, lib.alloy)
+}
+
+declare "add" {
+  argument "a" {}
+  argument "b" {}
+
+  lib.plus "default" {
+    a = argument.a.value
+    b = argument.b.value
+  }
+
+  export "output" {
+    value = lib.plus.default.sum
+  }
+}
